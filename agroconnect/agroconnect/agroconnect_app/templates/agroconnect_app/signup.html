@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'agroconnect_app/css/signup-styles.css' %}">
+    </head>
+    <body>
+        <img src="{% static 'agroconnect_app/logo.png' %}" alt="Logo" class="logo">
+    
+        <div class="container">
+        <h2>Cadastre-se</h2>
+        <form action="#" method="post"> <!-- Replace "#" with actual form action -->
+            <label for="username">Escolha um nome de usuário</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="visitorType">Qual o seu tipo de visitante?</label>
+            <div class="radio-group"> <!-- Adding a class to target the radio group -->
+                <input type="radio" id="agricultor" name="visitorType" value="agricultor" required>
+                <label for="agricultor">Agricultor</label><br>
+
+                <input type="radio" id="comprador" name="visitorType" value="comprador">
+                <label for="comprador">Comprador</label><br>
+
+                <input type="radio" id="fornecedor" name="visitorType" value="fornecedor">
+                <label for="fornecedor">Fornecedor</label><br>
+
+                <input type="radio" id="estudante" name="visitorType" value="estudante" style="margin-bottom: 10px;"> <!-- Added margin-bottom to the last radio input -->
+                <label for="estudante">Estudante</label>
+            </div>
+
+            <div class="password-field"> <!-- Wrapper for the password input and label -->
+                <label for="password">Escolha uma senha</label> <!-- Added margin-bottom -->
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" required>
+                <small>A senha deve conter pelo menos 8 caracteres, incluindo números e letras maiúsculas.</small>
+            </div>
+
+            <div> <!-- Wrapper for the confirm password input and label -->
+                <label for="confirmPassword">Repita a senha</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" required>
+                <small>As senhas devem corresponder.</small>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

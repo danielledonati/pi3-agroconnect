@@ -1,0 +1,94 @@
+/* Specific styles for the sign-up page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0B7222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: black;
+}
+
+.container h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container small {
+    color: black;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.password-field {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #5BD676;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3FA25C;
+}
+
+a {
+    color: #5BD676;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.radio-group label {
+    font-size: 14px;
+    margin-right: 15px;
+    margin-bottom: 10px
+}
+
+#password-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 400px; /* Example width */
+    height: auto; /* Example height */
+    margin-bottom: 20px; /* Example margin */
+    margin-right: 90px;
+    /* Add more styles as needed */
+}

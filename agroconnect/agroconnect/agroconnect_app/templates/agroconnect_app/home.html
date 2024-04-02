@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'agroconnect_app/css/home.css' %}"> <!-- Linking the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'agroconnect_app/logo.png' %}" alt="Logo" class="logo">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form action="#" method="post"> <!-- Replace "#" with actual form action -->
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+                <a href="#">Esqueceu a senha?</a>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Novo por aqui? <a href="{% url 'signup' %}">Cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>
